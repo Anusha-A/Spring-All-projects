@@ -1,0 +1,66 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.entity.Employee;
+import com.example.demo.service.EmployeeService;
+
+
+
+@RestController
+@RequestMapping("/api")
+public class EmployeeRestController {
+	public EmployeeRestController(EmployeeService employeeService) {
+		super();
+		this.employeeService = employeeService;
+	}
+
+	private EmployeeService employeeService;
+	
+	@RequestMapping("/employees")
+	public List<Employee> getAllEmployee(){
+		return employeeService.getAllEmployee();
+	}
+	
+	
+	@PostMapping("/employees")
+	public Employee save(@RequestBody Employee employee)
+	{
+		employee.setEmployeeId(0);
+		employeeService.save(employee);
+		return employee;
+	}
+	
+	@PutMapping("/employees")
+	public Employee update(@RequestBody Employee theEmployee)
+	{
+		return employeeService.update(theEmployee);
+	}
+	
+	@GetMapping("/employees/{theId}")
+	public Employee fingById(@PathVariable int theId)
+	{
+		return employeeService.fingById(theId);
+	}
+	
+	@GetMapping("/employeEmail/{email}")
+	public List<Employee> fingByEmail(@PathVariable String email)
+	{
+		return employeeService.fingByEmail(email);
+	}
+	
+	@DeleteMapping("/employees/{theId}")
+	public void delete(@PathVariable int theId)
+	{
+		employeeService.delete(theId);
+	}
+}

@@ -1,0 +1,8 @@
+server:
+  port: 1234
+spring:
+  h2:
+    console:      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create

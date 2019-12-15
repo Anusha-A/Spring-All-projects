@@ -1,0 +1,5 @@
+server:  port: 2345
+spring:
+  mvc:
+    view:      prefix: /WEB-INF/view/      suffix: .jsp  h2:    console:      enabled: true                                   
+  

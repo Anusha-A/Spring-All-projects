@@ -1,0 +1,28 @@
+server:
+  port: 0
+  
+spring:
+  h2:    
+    console:     
+      enabled: true 
+  cloud:
+    config:
+      uri: http=//localhost:8765/ 
+      
+       
+    
+  jpa:
+    show-sql: true
+    database: h2
+    hibernate:    
+      ddl-auto: create
+
+logging:
+  level:
+    org.hibernate.sql: debug
+    org.hibernate.type: trace   
+    
+
+  
+  
+

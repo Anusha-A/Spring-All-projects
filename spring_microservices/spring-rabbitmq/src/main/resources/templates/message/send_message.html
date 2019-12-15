@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+
+	<h3>Send Mesaage to...</h3>
+	<hr>
+	
+	
+	
+	<form action="#" th:action="@{/java-rabbitmq/producer}"
+		  method="get" class="form-inline">	
+
+		
+	
+		<input type="search"
+			   name="empName"
+			   placeholder="EmployeeName"
+			   class="form-control-sm ml-5 mr-2 mb-3" />
+
+		<input type="search"
+			   name="empId"
+			   placeholder="EmpId"
+			   class="form-control-sm mr-2 mb-3" />
+
+		<button type="submit"
+				class="btn btn-success btn-sm mb-3">Send</button>
+							   
+	</form>
+	
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+server:
+  port: 0
+spring:  application:
+    name: currency-exchange
+  zipkin:
+    base-url: http://localhost:9411/
+  cloud:
+    config:
+      url: http=//localhost:8765/

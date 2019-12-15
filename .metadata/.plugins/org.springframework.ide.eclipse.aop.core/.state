@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="admin-server"/>
+<aop-project name="spring-discovery-server"/>
+<aop-project name="spring-boot-jpa"/>
+<aop-project name="spring-jps-mongodb"/>
+<aop-project name="customer-service"/>
+<aop-project name="spring-config-server"/>
+<aop-project name="spring-boot-data-jpa"/>
+<aop-project name="spring-jps-post-comments"/>
+<aop-project name="spring-boot-mvc"/>
+<aop-project name="demo"/>
+<aop-project name="project_trial"/>
+<aop-project name="account-service"/>
+<aop-project name="spring-jps-employee-account"/>
+<aop-project name="spring-rest-jpa"/>
+</aop-reference-model>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="forex-service"/>
+<aop-project name="zuul-server"/>
+<aop-project name="currency_exchange"/>
+<aop-project name="config-server"/>
+<aop-project name="eureka-server"/>
+<aop-project name="zipkin-server"/>
+</aop-reference-model>

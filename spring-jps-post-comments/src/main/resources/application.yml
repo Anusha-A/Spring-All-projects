@@ -1,0 +1,17 @@
+server:
+  port : 1233
+spring:
+  datasource:
+    url : jdbc:mysql://localhost:3306/testdb
+    password: pass@word1
+    username : root
+
+  jpa:
+    show-sql: true
+    hibernate:      ddl-auto: create
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE

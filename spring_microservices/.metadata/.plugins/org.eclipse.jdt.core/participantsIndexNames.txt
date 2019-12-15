@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\b8ibmjava29\spring_microservices\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2525598834.index
+\spring-aop-mvc-logging\src\main\java
+C:\Users\b8ibmjava29\spring_microservices\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3911942461.index
+\spring-aop-mvc-logging\src\main\java
